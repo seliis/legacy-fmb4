@@ -1,0 +1,179 @@
+<section id="training">
+    <div class="part">
+        <img src="./img/training/a.jpg" alt=""
+            style="object-position: center 45%;"
+        >
+        <div class="desc">
+            <h1>basic flight</h1>
+            <p>
+                비행대에 참여하는 인원은 VFA-314 에서 요구되는
+                표준에 이를 수 있도록 기본부터 시작합니다.
+                이 단계에서는 항공기 운동역학과 시스템을
+                알아보고 이륙과 착륙의 절차와 항법
+                그리고 기본 및 특수 기동을 다룹니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/b.jpg" alt=""
+            style="object-position: right 65%;"
+        >
+        <div class="desc">
+            <h1>
+                formation flight
+            </h1>
+            <p>
+                능숙한 편대비행 능력의 구비는 조종 능력 배양과
+                전술 편대를 이루기 위한 기본입니다.
+                기본 과정에서 가장 비중과 난이도가 높은 단계이며
+                VFA-314 에서 활동하기 위해서는
+                각종 형태의 편대 대형을 만들고 유지할 수 있는
+                능력이 필수로 요구됩니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/c.jpg" alt=""
+            style="object-position: center 25%;"
+        >
+        <div class="desc">
+            <h1>
+                tactical turn
+            </h1>
+            <p>
+                상황인식 능력의 기초와 전술 편대의 유기적인 상호지원 능력을
+                키우기 위한 전술 선회를 배우는 단계입니다.
+                전술 선회를 통해 어떻게 편대가 하나의 개체처럼
+                움직이며 작전할 수 있는지 배우게 됩니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/d.jpg" alt=""
+            style="object-position: center 37.5%;"
+        >
+        <div class="desc">
+            <h1>
+                carrier ops
+            </h1>
+            <p>
+                지상을 떠나 바다로 나가는 단계입니다.
+                항공모함에 대해서 알아보고 항공모함 작전에서의
+                이함과 착함에 대한 절차를 배우는 단계입니다.
+                VFA-314 에서는 유료 항공모함 모듈을 사용합니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/e.jpg" alt=""
+            style="object-position: center 75%;"
+        >
+        <div class="desc">
+            <h1>
+                aerial refuel
+            </h1>
+            <p>
+                이제 진정한 전투기인 F-14 에 탑승할 시간입니다.
+                공중급유 훈련 단계에서는 관련 절차를 배우며
+                새로운 항공기에 대한 조종 능력을 키우고
+                익숙해지는 것이 목표입니다.
+                VFA-314 에서는 모두가 숙련된
+                공중급유 자격을 갖추어야 합니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/f.jpg" alt=""
+            style="object-position: center 65%;"
+        >
+        <div class="desc">
+            <h1>
+                basic fighter maneuvers
+            </h1>
+            <p>
+                BFM 단계에서는 근접 교전에서의 이론과 원리를 배우게 됩니다.
+                나의 항공기를 어떻게 민첩하게 움직이며
+                어떻게 생존할 수 있는지에 대한
+                항공 전투 기하학을 연구합니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/g.jpg" alt=""
+            style="object-position: right 40%;"
+        >
+        <div class="desc">
+            <h1>
+                air combat maneuvers
+            </h1>
+            <p>
+                ACM 단계에서 편대의 유기적인 상호지원을 연마하게 됩니다.
+                어떻게 하면 서로의 생존을 보장하면서 편대가 마주한 공중 위협을
+                신속히 처리할 수 있는지 그 이론과 방법을 끊임없이 연습하고 연구합니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/h.jpg" alt=""
+            style="object-position: left 52.5%;"
+        >
+        <div class="desc">
+            <h1>
+                combat aerial interception
+            </h1>
+            <p>
+                공중 위협을 차단하고 요격하여 공중 우세를 달성하는 방법을 배웁니다.
+                AIM-7 & AIM-54 중거리 요격 미사일의 운용 절차를 알아보고
+                레이더 요격 관제와 화력 통제를 맞추어보는 단계입니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/i.jpg" alt=""
+            style="object-position: center 70%;"
+        >
+        <div class="desc">
+            <h1>
+                air interdiction & precision strike
+            </h1>
+            <p>
+                항공 공습을 효과적으로 수행하기 위하여
+                다목적 범용 무장의 이해와 그를 이용한
+                전술 폭격의 실행을 통해 폭격술을 연마하고
+                표적 획득 장비를 이용한 레이저 정밀 유도 병기의
+                운용 절차를 알아보는 단계입니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/j.jpg" alt=""
+            style="object-position: center 70%;"
+        >
+        <div class="desc">
+            <h1>
+                flight lead practice
+            </h1>
+            <p>
+                전술 편대를 이끄는 편대장 역할을 연습하게 됩니다.
+                VFA-314 에서는 서로가 서로에게 조언하여
+                상황에서의 올바른 방향을 가질 수 있도록
+                누구라도 편대를 이끌 줄 알아야 합니다.
+            </p>
+        </div>
+    </div>
+    <div class="part">
+        <img src="./img/training/k.jpg" alt=""
+            style="object-position: center 45%;"
+        >
+        <div class="desc">
+            <h1>
+                you're good to go
+            </h1>
+            <p>
+                축하합니다. 이로써 VFA-314 에서 요구되는 표준을 갖추게 되었습니다.
+                이제 같이 비행하며 서로 공유하고 같이 배워나갈 때입니다.
+                VFA-314 의 구성원이 되신 것을 환영합니다.
+            </p>
+        </div>
+    </div>
+</section>

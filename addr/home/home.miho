@@ -1,9 +1,45 @@
 <section id="home">
     <div class="part">
-        <img id="img-1" src="./image/home/1.jpg" alt="">
+        <img id="img-1" src="./img/home/a.jpg" alt="">
     </div>
-    <div class="part"
-        style="background-color: #3060C0;"
-    >
+    <div class="part half">
+        <i id="anchor" class="fas fa-anchor"></i>
+        <h1>welcome aboard</h1>
+    </div>
+    <div class="part half">
+        <h2>who we are?</h2>
+        <p>
+            VFA-314 Full Metal Bitches 는
+            전투항공 시뮬레이터를 통해 군사 비행과 전술을 연구합니다.
+            실제의 전투조종사가 거치는 일련의 훈련과정 그리고
+            전투 환경에서 이들이 겪는 한계와 어려움을
+            모사함으로써 실제에 근접한 전투 비행 경험을
+            공유하는 것이 우리의 궁극적인 목표입니다.
+        </p>
+    </div>
+    <div class="part">
+        <img id="img-2" src="./img/home/b.jpg" alt="">
+        <h3>우리는 팀으로서의 목표를 추구합니다</h3>
+    </div>
+    <div class="part half left">
+        <h2>how to join?</h2>
+        <p>
+            VFA-314 Full Metal Bitches 는 체계적이고 효과적인
+            비행 전술을 연구하고자 하는 모든 가상 파일럿에게 열려 있습니다.
+            비행대 참여를 위해서는 조종 훈련 교범을 바탕으로
+            진행되는 정규의 교육 과정을 수료해야 합니다.
+        </p>
+    </div>
+    <div class="part half right">
+        <h2>flight training course</h2>
+        <p>
+            전투 비행 훈련은 2단계로 분리 운영됩니다.
+            정확하고 효율적인 기체 제어를 위한 기초 비행 훈련 과정이 선행되며,
+            이후 화기 운용 및 편대간 전술 운영을 위한 전투 비행 훈련을 진행합니다.
+        </p>
+    </div>
+    <div class="part">
+        <img id="img-3" src="./img/home/c.jpg" alt="">
+        <h4>screw me if you can</h4>
     </div>
 </section>

@@ -8,7 +8,7 @@
             class="fas fa-bars">
         </i>
     </div>
-    <nav id="header-nav">
+    <nav>
         <ul>
             {{range .Navs}}
                 <li onclick="addrChanger(this.innerHTML);">

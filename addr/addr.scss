@@ -1,14 +1,16 @@
 $noto: "Noto Sans KR", sans-serif;
 $quick: "Quicksand", sans-serif;
+$tang: "Tangerine", cursive;
 
 $bg: #010204;
 $lt: #D0D0D0;
 $rd: #FD2F4A;
 $yw: #E2B640;
 
+@import "training";
 @import "header";
 @import "home";
-@import "nil";
+@import "deny";
 
 * {
     list-style: none;

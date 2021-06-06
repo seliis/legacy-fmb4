@@ -1,14 +1,69 @@
 #home {
     overflow-y: scroll;
     .part{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        display: flex;
         height: 100%;
+        &.half {
+            height: 50%;
+        }
+        &.left {
+            align-items: flex-start;
+        }
+        &.right {
+            align-items: flex-end;
+        }
+        img {
+            position: absolute;
+            object-fit: cover;
+            z-index: -100;
+            height: 100%;
+            width: 100%;
+        }
+        h1, h2, h3, h4{
+            text-shadow: 3px 3px 5px $bg;
+            text-transform: capitalize;
+            font-family: $quick;
+            padding: 16px 25%;
+            font-weight: 300;
+            font-size: 48px;
+        }
+        h2 {
+            color: $rd;
+        }
+        h3 {
+            font-family: $noto;
+            font-weight: 500;
+        }
+        h4 {
+            font-family: $tang;
+            font-weight: 700;
+            font-size: 72px;
+        }
+        p {
+            text-align: justify;
+            font-weight: 500;
+            font-size: 24px;
+            padding: 0 25%;
+        }
+        i {
+            font-size: 72px;
+            color: $yw;
+        }
+        #img-1 {
+            filter: contrast(120%) grayscale(10%) opacity(90%);
+            object-position: 37.5% center;
+        }
+        #img-2 {
+            filter: contrast(110%) grayscale(25%) opacity(70%);
+            object-position: 25% 45%;
+        }
+        #img-3 {
+            filter: contrast(120%) grayscale(25%) opacity(70%);
+            object-position: 87.5% 70%;
+        }
     }
-}
-
-#img-1 {
-    filter: grayscale(20%) contrast(115%) opacity(90%);
-    object-position: 40% 55%;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
 }

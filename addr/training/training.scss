@@ -1,0 +1,40 @@
+#training {
+    overflow-y: scroll;
+    .part {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 50%;
+        .desc {
+            text-shadow: 1px 1px 3px $bg;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 0 25%;
+            display: flex;
+        }
+        img {
+            mask-image: linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0));
+            filter: blur(2px) opacity(0.50) grayscale(25%) contrast(125%);
+            position: absolute;
+            object-fit: cover;
+            z-index: -100;
+            height: 99%;
+            width: 100%;
+        }
+        h1 {
+            text-transform: capitalize;
+            padding-bottom: 10px;
+            font-family: $quick;
+            font-weight: 300;
+            font-size: 56px;
+            color: $rd;
+        }
+        p {
+            text-align: justify;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}

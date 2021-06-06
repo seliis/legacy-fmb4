@@ -4,4 +4,4 @@ go.sum
 *.css
 *.wasm
 wasm_exec.js
-miho_scss_compiler
+mscmp_init

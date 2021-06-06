@@ -1,8 +1,14 @@
 w = "/mnt/d/fmb"
 
-pre:
+cls:
 	clear
-	@./miho_scss_compiler
+	@rm -rf ./mscmp_init
+	@rm -rf ./misc/miho.css
+	@rm -rf ./misc/miho.wasm
+
+pre: cls
+	@go build -o ./mscmp_init mscmp/mscmp.go
+	@./mscmp_init
 	@echo "SCSS Compiled"
 	@GOOS=js GOARCH=wasm go build -o ./misc/miho.wasm ./wasm
 	@echo "WASM Compiled"
@@ -12,8 +18,13 @@ dev: pre
 
 win: pre
 	@if [ -d $(w) ]; then \
+		echo "Removing Legacies"; \
 		rm -rf $(w); \
 	fi
-	@GOOS=windows GOARCH=amd64 go build -ldflags="-X 'main.port=:5000'" -o $(w)/start.exe ./main.go
+	@GOOS=windows GOARCH=amd64 go build -ldflags="-X 'main.port=:5000'" -o $(w)/appStart.exe ./main.go
 	@find ./addr -name "*.miho" | cpio -pdm $(w)
 	@cp -r ./misc $(w)/
+	# Cleansing
+	@rm -rf ./mscmp_init
+	@rm -rf ./misc/miho.css
+	@rm -rf ./misc/miho.wasm

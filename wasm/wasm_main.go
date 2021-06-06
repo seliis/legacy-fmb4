@@ -33,7 +33,7 @@ func main() {
 	js.Global().Set("controlNavs", js.FuncOf(controlNavs))
 	js.Global().Set("addrChanger", js.FuncOf(addrChanger))
 
-	println("miho: wasm initiated")
+	println("Miho's Web Assembly Loaded")
 	<-make(chan struct{})
 	select {}
 }

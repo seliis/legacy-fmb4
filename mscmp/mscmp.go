@@ -1,3 +1,4 @@
+// miho's scss compiler
 package main
 
 import (
@@ -24,7 +25,10 @@ func find(s string) []string {
 		return nil
 	})
 
-	fmt.Println(a)
+	for _, v := range a {
+		fmt.Println("found: " + v + ".scss")
+	}
+
 	return a
 }
 

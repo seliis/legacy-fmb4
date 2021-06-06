@@ -1,0 +1,14 @@
+#nil {
+    justify-content: center;
+    background-color: $bg;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 3rem;
+        color: $yw;
+    }
+}

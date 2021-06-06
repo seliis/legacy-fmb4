@@ -1,0 +1,21 @@
+{{ define "header" }}
+<header>
+    <div>
+        <p onclick="moveLanding();">
+            VFA-314 FULL METAL BITCHES
+        </p>
+        <i onclick="controlNavs();"
+            class="fas fa-bars">
+        </i>
+    </div>
+    <nav id="header-nav">
+        <ul>
+            {{range .Navs}}
+                <li onclick="addrChanger(this.innerHTML);">
+                    {{.Menu}}
+                </li>
+            {{end}}
+        </ul>
+    </nav>
+</header>
+{{ end }}

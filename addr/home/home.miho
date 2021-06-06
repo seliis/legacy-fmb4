@@ -1,0 +1,9 @@
+<section id="home">
+    <div class="part">
+        <img id="img-1" src="./image/home/1.jpg" alt="">
+    </div>
+    <div class="part"
+        style="background-color: #3060C0;"
+    >
+    </div>
+</section>

@@ -1,0 +1,44 @@
+$noto: "Noto Sans KR", sans-serif;
+$quick: "Quicksand", sans-serif;
+
+$bg: #010204;
+$lt: #D0D0D0;
+$rd: #FD2F4A;
+$yw: #E2B640;
+
+@import "header";
+@import "home";
+@import "nil";
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%frame {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $bg;
+    font-family: $noto;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: $lt;
+}
+
+main {
+    grid-template: 50px 1fr / 1fr;
+    @extend %frame;
+    display: grid;
+}
+
+section {
+    @extend %frame;
+}

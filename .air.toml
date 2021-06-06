@@ -1,0 +1,32 @@
+root = "."
+tmp_dir = "_air"
+
+[build]
+    bin = "./_air/main"
+    cmd = "make dev"
+    delay = 1000
+    exclude_dir = ["_air"]
+    exclude_file = []
+    exclude_regex = []
+    exclude_unchanged = false
+    follow_symlink = false
+    full_bin = ""
+    include_dir = []
+    include_ext = ["go", "miho", "scss", "wasm"]
+    kill_delay = "0s"
+    log = "air.log"
+    send_interrupt = false
+    stop_on_error = true
+
+[color]
+    app = ""
+    build = "yellow"
+    main = "magenta"
+    runner = "green"
+    watcher = "cyan"
+
+[log]
+    time = false
+
+[misc]
+    clean_on_exit = false

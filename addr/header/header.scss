@@ -1,0 +1,44 @@
+header {
+    background-color: $bg;
+    font-family: $quick;
+    z-index: 100;
+    div {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 7.5%;
+        display: flex;
+        height: 100%;
+        p, i {
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    nav {
+        justify-content: flex-start;
+        height: calc(100vh - 50px);
+        background-color: $bg;
+        align-items: center;
+        padding: 0 7.5%;
+        display: none;
+        ul {
+            justify-content: space-evenly;
+            flex-direction: column;
+            display: flex;
+            height: 50%;
+            width: 100%;
+            li {
+                text-transform: capitalize;
+                font-weight: 300;
+                font-size: 2rem;
+                cursor: pointer;
+                &:hover {
+                    color: $rd;
+                }
+            }
+        }
+        &.visible {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+#home {
+    overflow-y: scroll;
+    .part{
+        height: 100%;
+    }
+}
+
+#img-1 {
+    filter: grayscale(20%) contrast(115%) opacity(90%);
+    object-position: 40% 55%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

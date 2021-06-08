@@ -8,13 +8,14 @@
             class="fas fa-bars">
         </i>
     </div>
-    <nav>
+    <nav id="nav-menu">
         <ul>
-            {{range .Navs}}
-                <li onclick="addrChanger(this.innerHTML);">
-                    {{.Menu}}
-                </li>
-            {{end}}
+            <li onclick="addrChanger(this.innerHTML);">
+                training
+            </li>
+            <li onclick="addrChanger(this.innerHTML);">
+                aviators
+            </li>
         </ul>
     </nav>
 </header>

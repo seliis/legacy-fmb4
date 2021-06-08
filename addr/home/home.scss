@@ -23,8 +23,8 @@
             height: 100%;
             width: 100%;
         }
-        h1, h2, h3, h4{
-            text-shadow: 3px 3px 5px $bg;
+        h1, h2, h3 {
+            text-shadow: 3px 3px 5px $black;
             text-transform: capitalize;
             font-family: $quick;
             padding: 16px 25%;
@@ -32,16 +32,11 @@
             font-size: 48px;
         }
         h2 {
-            color: $rd;
+            color: $red;
         }
         h3 {
             font-family: $noto;
             font-weight: 500;
-        }
-        h4 {
-            font-family: $tang;
-            font-weight: 700;
-            font-size: 72px;
         }
         p {
             text-align: justify;
@@ -51,18 +46,18 @@
         }
         i {
             font-size: 72px;
-            color: $yw;
+            color: $yellow;
         }
         #img-1 {
-            filter: contrast(120%) grayscale(10%) opacity(90%);
+            filter: contrast(120%) grayscale(25%) opacity(90%);
             object-position: 37.5% center;
         }
         #img-2 {
-            filter: contrast(110%) grayscale(25%) opacity(70%);
+            filter: contrast(120%) grayscale(25%) opacity(25%);
             object-position: 25% 45%;
         }
         #img-3 {
-            filter: contrast(120%) grayscale(25%) opacity(70%);
+            filter: contrast(120%) grayscale(25%) opacity(25%);
             object-position: 87.5% 70%;
         }
     }

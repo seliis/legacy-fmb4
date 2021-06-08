@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmb/addr"
+	"fmt"
 
+	"github.com/go-redis/redis"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/favicon"
 	"github.com/gofiber/template/html"
@@ -14,6 +16,16 @@ var (
 )
 
 func main() {
+	// start redis
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     "localhost:6379",
+		Password: "",
+		DB:       0,
+	})
+
+	pong, err := rdb.Ping().Result()
+	fmt.Println(pong, err)
+
 	// template engine
 	eng := html.New("./addr", ".miho")
 
@@ -33,7 +45,7 @@ func main() {
 	))
 
 	// set route
-	addr.Routing(app)
+	addr.Routing(app, rdb)
 
 	// start server
 	app.Listen(port)

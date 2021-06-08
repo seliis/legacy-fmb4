@@ -2,6 +2,7 @@ _air/
 go.mod
 go.sum
 *.css
+*.rdb
 *.wasm
 wasm_exec.js
 mscmp_init

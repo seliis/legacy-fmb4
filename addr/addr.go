@@ -1,17 +1,18 @@
 package addr
 
 import (
-	"fmb/addr/header"
 	"os"
 	"path/filepath"
 
+	"github.com/go-redis/redis"
 	"github.com/gofiber/fiber/v2"
 )
 
-func isExist(n string) bool {
+func isExist(p string) bool {
 	var r bool = false
-	filepath.Walk("./addr", func(p string, i os.FileInfo, e error) error {
-		if i.Name() == n+".miho" {
+	filepath.Walk("./addr", func(
+		d string, i os.FileInfo, e error) error {
+		if i.Name() == p+".miho" {
 			r = true
 		}
 		return nil
@@ -19,26 +20,26 @@ func isExist(n string) bool {
 	return r
 }
 
-func Routing(app *fiber.App) {
-	arrNavs := header.GetNavs()
+func getMap(p string) interface{} {
+	return nil
+}
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.Render("home/home", fiber.Map{
-			"Navs": arrNavs,
-		}, "addr")
-	})
-
-	app.Get("/:addr", func(c *fiber.Ctx) error {
+func Routing(app *fiber.App, rdb *redis.Client) {
+	app.Get("/:addr?", func(c *fiber.Ctx) error {
 		p := c.Params("addr")
-		for _, v := range arrNavs {
-			if v.Menu == p && isExist(p) {
-				return c.Render(p+"/"+p, fiber.Map{
-					"Navs": arrNavs,
-				}, "addr")
-			}
+
+		if p == "" {
+			return c.Render(
+				"home/home", fiber.Map{}, "addr",
+			)
+		} else if isExist(p) {
+			return c.Render(
+				p+"/"+p, fiber.Map{}, "addr",
+			)
+		} else {
+			return c.Render(
+				"denied/denied", fiber.Map{}, "addr",
+			)
 		}
-		return c.Render("deny/deny", fiber.Map{
-			"Navs": arrNavs,
-		}, "addr")
 	})
 }

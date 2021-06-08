@@ -1,16 +1,16 @@
 $noto: "Noto Sans KR", sans-serif;
 $quick: "Quicksand", sans-serif;
-$tang: "Tangerine", cursive;
 
-$bg: #010204;
-$lt: #D0D0D0;
-$rd: #FD2F4A;
-$yw: #E2B640;
+$yellow: #E2B640;
+$black: #010204;
+$white: #FEFDFB;
+$red: #FD2F4A;
 
+@import "aviators";
 @import "training";
 @import "header";
+@import "denied";
 @import "home";
-@import "deny";
 
 * {
     list-style: none;
@@ -26,13 +26,13 @@ $yw: #E2B640;
 }
 
 body {
-    background-color: $bg;
+    background-color: $black;
     font-family: $noto;
     position: relative;
     overflow: hidden;
+    color: $white;
     height: 100vh;
     width: 100vw;
-    color: $lt;
 }
 
 main {

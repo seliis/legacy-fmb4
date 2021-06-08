@@ -2,6 +2,7 @@ w = "/mnt/d/fmb"
 
 cls:
 	clear
+	@rm -rf ./dump.rdb
 	@rm -rf ./mscmp_init
 	@rm -rf ./misc/miho.css
 	@rm -rf ./misc/miho.wasm

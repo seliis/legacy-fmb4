@@ -1,0 +1,14 @@
+#aviators {
+    grid-template: 1fr / 300px 1fr;
+    display: grid;
+    aside {
+        background-color: #2850A1;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .detail {
+        background-color: #4775D1;
+    }
+}

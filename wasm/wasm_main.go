@@ -13,7 +13,7 @@ func moveLanding(this js.Value, arg []js.Value) interface{} {
 
 func controlNavs(this js.Value, arg []js.Value) interface{} {
 	menu := js.Global().Get("document").Call(
-		"querySelector", "nav",
+		"getElementById", "nav-menu",
 	)
 	menu.Get("classList").Call(
 		"toggle", "visible",

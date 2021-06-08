@@ -1,5 +1,5 @@
 header {
-    background-color: $bg;
+    background-color: $black;
     font-family: $quick;
     z-index: 100;
     div {
@@ -15,12 +15,14 @@ header {
         }
     }
     nav {
+        transform: translateX(100%);
         justify-content: flex-start;
+        transition: all 500ms ease;
         height: calc(100vh - 50px);
-        background-color: $bg;
+        background-color: $black;
         align-items: center;
         padding: 0 7.5%;
-        display: none;
+        display: flex;
         ul {
             justify-content: space-evenly;
             flex-direction: column;
@@ -33,12 +35,12 @@ header {
                 font-size: 2rem;
                 cursor: pointer;
                 &:hover {
-                    color: $rd;
+                    color: $red;
                 }
             }
         }
         &.visible {
-            display: flex;
+            transform: translate(0);
         }
     }
 }
